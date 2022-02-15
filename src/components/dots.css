@@ -1,0 +1,34 @@
+.dots {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border: 2px solid #fff;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.dot:nth-child(odd):hover {
+  background: #a9fccc;
+}
+.dot:nth-child(even):hover {
+  background: #fdcaca;
+}
+
+.active-dot {
+  background: none;
+  transform: rotate(-180deg);
+}
+
+.dot.active-dot:hover {
+  background: none;
+}
